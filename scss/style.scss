@@ -22,7 +22,6 @@
         font-size: 15px;
         line-height: 24px;
         /* identical to box height, or 160% */
-
         letter-spacing: -0.3px;
 
         color: #939393;
@@ -33,12 +32,13 @@
         margin-bottom: 24px;
         background: #f8f8f8;
         border-radius: 12px;
-        color: $active-blue;
+        color: #2376f2;
         border: none;
         outline: none;
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
     }
 }
 // Components
@@ -50,6 +50,7 @@
 @import "./components/garage-votecard";
 
 // Layouts
+@import "./layout/main";
 @import "./layout/auth";
 @import "./layout/cameras";
 @import "./layout/hero";

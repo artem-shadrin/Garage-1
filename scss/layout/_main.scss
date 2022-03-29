@@ -1,0 +1,102 @@
+.home{
+    padding-top: 72px;
+    &__title{
+        margin-bottom: 16px;
+    }
+    &__own{
+        background-color: $grey-1;
+        border-radius: 12px;
+        &-button{
+            position: relative;
+            &::after{
+                display: block;
+                content: '';
+                padding-top: 12px;
+                border-bottom: 1px solid #00000020;
+                position: absolute;
+                width: 311px;
+                bottom: 0;
+                left: 12px;
+            }
+        }
+        .slick-dots {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -26px;
+            padding: 0;
+            li {
+                background: $button;
+                border: none;
+                border-radius: 50%;
+                height: 8px;
+                width: 8px;
+                margin-left: 4px;
+                outline: none;
+                button {
+                    visibility: hidden;
+                }
+            }
+            li.slick-active{
+                width: 16px;
+                background: $active-blue;
+                border-radius: 12px;
+            }
+        }        
+    }
+    &__button-add{
+        border: 1px solid $disable-blue;
+        border-radius: 12px;
+        margin-top: 40px;
+        text-align: center;
+        padding: 16px 0;
+        .text{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg{
+                margin-right: 7px;
+            }
+        }
+    }
+    &__news{
+        margin-top: 24px;
+        &-title{
+            margin-left: 34px;
+            margin-bottom: 8px;
+        }
+        &-slider{
+            margin-left: 34px;
+            .item{
+                width: 240px;
+                background-color: $grey-1;
+                padding: 16px 8px 19px 12px;
+                border-radius: 12px;
+                margin-right: 8px;
+                &__title{
+                    font-size: 17px;
+                    margin-bottom: 8px;
+                }
+                &__text{
+                    line-height: 23px;
+                    color: $grey-2;
+                }
+            }
+        }
+    }
+}
+.own__list{
+    padding: 15px 30px 16px;
+    margin: 0;
+    .item{
+        margin-bottom: 4px;
+        &:last-child{
+            margin: 0;
+        }
+    }
+}

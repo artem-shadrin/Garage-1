@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../styles/styles.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <link rel="stylesheet" href="../../styles/slick.css">
   <title>Document</title>
 </head>
 
@@ -13,7 +14,70 @@
   <section class="home">
     <div class="container">
       <h2 class="section__title home__title">Моя собственность</h1>
+      <div class="home__own slider">
+        <div class="slide">
+          <a href="/pages/main/own.html" class="garage-setting-button home__own-button" id="data-profile">
+            <span class="garage-setting-button__label">
+              <svg class="i-icon i-icon--md">
+                <use xlink:href="../../icons/sprite.svg#ic_garage"></use>
+              </svg>
+            </span>
+            <span class="garage-setting-button__caption">Гараж №5</span>
+            <svg class="i-icon i-icon--md">
+              <use xlink:href="../../icons/sprite.svg#ic_arrow"></use>
+            </svg>
+          </a>
+          <ul class="own__list">
+            <li class="item">Спиридонов Олег Викторович</li>
+            <li class="item">Площадь: <b>16 кв. м.</b></li>
+            <li class="item">70-70-06/011/2020-564</li>
+          </ul>
+        </div>
+        <div class="slide">
+          <a href="/pages/main/own.html" class="garage-setting-button home__own-button" id="data-profile">
+            <span class="garage-setting-button__label">
+              <svg class="i-icon i-icon--md">
+                <use xlink:href="../../icons/sprite.svg#ic_garage"></use>
+              </svg>
+            </span>
+            <span class="garage-setting-button__caption">Гараж №5</span>
+            <svg class="i-icon i-icon--md">
+              <use xlink:href="../../icons/sprite.svg#ic_arrow"></use>
+            </svg>
+          </a>
+          <ul class="own__list">
+            <li class="item">Спиридонов Олег Викторович</li>
+            <li class="item">Площадь: <b>16 кв. м.</b></li>
+            <li class="item">70-70-06/011/2020-564</li>
+          </ul>
+        </div>
+      </div>
+      <div class="home__button-add">
+        <span class="garage-setting-button__label text">
+          <svg class="i-icon i-icon--md">
+            <use xlink:href="../../icons/sprite.svg#ic_plus"></use>
+          </svg>
+          Добавить собственность
+        </span>
+      </div>
     </div>
+    <div class="home__news">
+      <h2 class="section__title home__news-title">Новости</h1>
+      <div class="home__news-slider slider">
+        <div class="item">
+          <h2 class="item__title">Новые условия аренды</h2>
+          <div class="item__text">В связи с ситуацией в мире, условия аренды наших гаражей изменились. Теперь недоступн...</div>
+        </div>
+        <div class="item">
+          <h2 class="item__title">Новые условия аренды</h2>
+          <div class="item__text">В связи с ситуацией в мире, условия аренды наших гаражей изменились. Теперь недоступн...</div>
+        </div>
+        <div class="item">
+          <h2 class="item__title">Новые условия аренды</h2>
+          <div class="item__text">В связи с ситуацией в мире, условия аренды наших гаражей изменились. Теперь недоступн...</div>
+        </div>
+      </div>
+    </div> 
   </section>
   <footer>
     <div class="container">
@@ -63,7 +127,9 @@
       </nav>
     </div>
   </footer>
-  <script type="module" src="../js/components/home.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="module" src="../../js/components/home.js"></script>
+  <script type="module" src="../../js/slick.min.js"></script>
 </body>
 
 </html>
