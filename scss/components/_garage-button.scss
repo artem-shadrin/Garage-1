@@ -1,0 +1,29 @@
+.garage-button {
+	width: 343px;
+	height: 56px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	border: 1px solid transparent;
+	background: $active-blue;
+	border-radius: 12px;
+	&__caption {
+		font-family: "SF Pro Display";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 150%;
+		color: #ffffff;
+	}
+	&:disabled {
+		background: $disable-blue;
+	}
+	&--transparent {
+		background: none;
+		border: 1px solid $active-blue;
+	}
+	&--transparent &__caption {
+		color: $active-blue;
+	}
+}

@@ -1,0 +1,57 @@
+@import "./font";
+@import "./variables";
+@import "./colors";
+@import "./icons";
+@import "./base/base";
+
+.section {
+    &__title {
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 32px;
+        /* identical to box height, or 114% */
+        margin-bottom: 8px;
+        color: #000000;
+    }
+    &__subtitle {
+        display: inline-block;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        /* identical to box height, or 160% */
+
+        letter-spacing: -0.3px;
+
+        color: #939393;
+    }
+    &__back-button {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 24px;
+        background: #f8f8f8;
+        border-radius: 12px;
+        color: $active-blue;
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+// Components
+@import "./components/garage-button";
+@import "./components/garage-input";
+@import "./components/garage-setting-button";
+@import "./components/garage-navigation";
+@import "./components/garage-variant";
+@import "./components/garage-votecard";
+
+// Layouts
+@import "./layout/auth";
+@import "./layout/cameras";
+@import "./layout/hero";
+@import "./layout/receipt";
+@import "./layout/profile";
