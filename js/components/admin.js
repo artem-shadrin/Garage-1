@@ -18,5 +18,8 @@ $(document).ready(function() {
     e.preventDefault();
     $('.create').removeClass('create_active');
     $('.header').removeClass('header_active');
+    $('.button--create').css("pointer-events", "auto");
+    $('.button--create').addClass('visible');
+    $('.button--create').removeClass('active');
   });
 });
