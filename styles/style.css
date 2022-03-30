@@ -771,7 +771,6 @@ footer {
 }
 
 .home__news-title {
-  margin-left: 34px;
   margin-bottom: 8px;
 }
 
@@ -1761,11 +1760,13 @@ footer {
   border-radius: 24px;
   padding: 8px 16px 8px 8px;
   outline: none;
+  width: 100%;
 }
 
 .chat-input__text input {
   border: none;
   background-color: transparent;
+  width: 100%;
 }
 
 .chat-input__text input:active, .chat-input__text input:focus {
