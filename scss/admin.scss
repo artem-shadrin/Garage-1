@@ -1,8 +1,12 @@
 @import "./font";
+@import "./colors";
+@import "./components/garage-variant";
+@import "./components/garage-votecard";
 *,
 *::after,
 *::before {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -26,10 +30,16 @@ h6 {
   padding: 0;
   margin: 0;
 }
-
+p {
+  font-size: 16px;
+}
 .container {
   max-width: 1440px;
   margin: 0 auto;
+}
+.wrap{
+  max-width: 641px;
+  display: inline-block;
 }
 .text {
   font-weight: 400;
@@ -62,6 +72,7 @@ h6 {
 .i-icon#ic_payment {
 }
 .i-icon#ic_pen {
+  stroke: $active-blue;
 }
 .i-icon#ic_play {
 }
@@ -83,6 +94,7 @@ h6 {
 .i-icon#ic_clip {
 }
 .i-icon#ic_close {
+  stroke: $active-blue;
 }
 .i-icon#ic_members {
 }
@@ -133,6 +145,9 @@ h6 {
 
   &__create-vote-btn {
   }
+  &_active{
+    padding-right: 346px;
+  }
 }
 .button {
   display: flex;
@@ -154,6 +169,13 @@ h6 {
   }
   &--transparent {
     border: 1px solid #e9e9e9;
+  }
+  &--create{
+    border: 1px solid $active-blue;
+    border-radius: 16px;
+    &.active{
+      pointer-events: auto !important;
+    }
   }
 }
 .menu {
@@ -187,4 +209,91 @@ h6 {
 
 .news{
   margin-top: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  &__title{
+    margin-bottom: 16px;
+  }
+  &__info{
+    border-radius: 16px;
+    background-color: $grey-1;
+    margin-bottom: 20px;
+    padding: 24px;
+    transition: all .3s ease;
+    &:hover{
+      box-shadow: 0 4px 24px 0 #364B6A12;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__text{
+    color: $gray-3;
+  }
+  &__create-vote-btn{
+    display: inline-flex;
+  }
+  .button{
+    transition: all .3s ease;
+    &__caption{
+      color: $active-blue;
+    }
+  }
+  .button:hover{
+    border: 1px solid $disable-blue;
+    .button__caption{
+      color: $disable-blue;
+      transition: all .3s ease;
+    }
+  }
+  .button.active{
+    border: 1px solid $disable-blue;
+    .button__caption{
+      color: $disable-blue;
+      transition: all .3s ease;
+    }
+  }
+  &__vote{
+  }
+}
+.garage{
+  &-votecard{
+    text-align: center;
+    &__form{
+      max-width: 311px;
+    }
+  }
+}
+.create{
+  max-width: 326px;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  overflow-y: auto;
+  right: -326px;
+  z-index: 1;
+  background-color: #fff;
+  transform: translateX(100%);
+  top: 0;
+  padding: 20px 46px 20px 26px;
+  border-left: 1px solid #EFEFEF;
+  &__link{
+    display: flex;
+    align-items: center;
+  }
+  &__title{
+    font-size: 20px;
+  }
+  &__button{
+    padding: 18px;
+    background-color: $grey-1;
+    border-radius: 12px;
+    margin-right: 20px;
+  }
+  &_active{
+    transform: translateX(0%);
+    right: 0;
+  }
 }
