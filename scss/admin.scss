@@ -1,0 +1,186 @@
+@import "./font";
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+a {
+  font: inherit;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+.block {
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+//#region ICONS
+.i-icon {
+  width: 24px;
+  height: 24px;
+  stroke: #878787;
+  fill: none;
+}
+.i-icon#ic_pause {
+}
+.i-icon#ic_payment {
+}
+.i-icon#ic_pen {
+}
+.i-icon#ic_play {
+}
+.i-icon#ic_pluse {
+  stroke: #fff;
+}
+.i-icon#ic_receipt {
+}
+.i-icon#ic_search {
+}
+.i-icon#ic_send {
+}
+.i-icon#ic_arrownext {
+}
+.i-icon#ic_camera {
+}
+.i-icon#ic_check {
+}
+.i-icon#ic_clip {
+}
+.i-icon#ic_close {
+}
+.i-icon#ic_members {
+}
+.i-icon#ic_message {
+}
+.i-icon#ic_news {
+}
+// #endregion ICONS
+
+//#region MAIN
+.left {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  border-right: 1px solid #efefef;
+  padding-top: 70px;
+  width: 312px;
+  &__menu {
+  }
+  &__logo {
+    padding-left: 24px;
+    margin-bottom: 64px;
+  }
+}
+.right {
+  margin-left: auto;
+  width: calc(100% - 312px);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 1px solid #e9e9e9;
+  &__title {
+  }
+
+  &__tools {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__create-ad-btn {
+  }
+
+  &__create-vote-btn {
+  }
+}
+.button {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-radius: 12px;
+  &__icon {
+    margin-right: 7px;
+    line-height: 0;
+  }
+
+  &__caption {
+    white-space: nowrap;
+  }
+  &--active {
+    background: #2376f2;
+    color: #fff;
+  }
+  &--transparent {
+    border: 1px solid #e9e9e9;
+  }
+}
+.menu {
+  &__list {
+    padding: 0;
+    list-style: none;
+  }
+  &__item {
+    height: 48px;
+  }
+}
+.item-menu {
+  height: 100%;
+  padding-left: 27px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #878787;
+  &--active,
+  &:hover {
+    background: #e9f1fe;
+  }
+  &__icon {
+    margin-right: 20px;
+  }
+  &__text {
+  }
+}
+
+//#endregion MAIN
