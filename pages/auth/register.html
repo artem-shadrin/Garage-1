@@ -2,53 +2,56 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../../styles/style.css">
-	<title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <title>Document</title>
 </head>
 
 <body>
-	<header class="header_auth">
-		<div class="container">
-			<a onclick="javascript:history.back();" class="section__back-button">
-				<svg class="i-icon i-icon--md" id="ic_arrowback">
-				  <use xlink:href="../../icons/sprite.svg#ic_arrowback"></use>
-				</svg>
-			  </a>
-		</div>
-	</header>
-	<section class="authorization">
-		<div class="container">
-			<div class="registration">
-				<h2 class="section__title registration__title">Введите код из SMS</h2>
-				<span class="section__subtitle registration__subtitle">
-					Для регистрации укажите ФИО и номер телефона
-				</span>
-				<form action="" class="form-registration" id="form-registration">
-					<div class="form-registration__input">
-						<div class="garage-field">
-							<input type="text" class="garage-field__input" name="registration__name" id="registration__name"
-								placeholder=" ">
-							<label for="registration__name" class="garage-field__label">ФИО</label>
-						</div>
-					</div>
-					<div class="form-registration__input">
-						<div class="garage-field">
-							<input type="text" class="garage-field__input" name="registration__phone" id="registration__phone"
-								placeholder=" " value="+7">
-							<label for="registration__phone" class="garage-field__label">Номер телефона</label>
-						</div>
-					</div>
-					<a href="./confirm.html" class="garage-button" disabled id="registration__submit">
-						<div class="garage-button__caption">Продолжить</div>
-					</a>
-				</form>
-			</div>
-		</div>
-	</section>
-	<script src="../../js/components/auth.js"></script>
+  <header class="header_auth">
+    <div class="container">
+      <a onclick="javascript:history.back();" class="section__back-button">
+        <svg class="i-icon i-icon--md" id="ic_arrowback">
+          <use xlink:href="../../icons/sprite.svg#ic_arrowback"></use>
+        </svg>
+      </a>
+    </div>
+  </header>
+  <section class="authorization">
+    <div class="container">
+      <div class="registration">
+        <h2 class="section__title registration__title">Введите код из SMS</h2>
+        <span class="section__subtitle registration__subtitle">
+          Для регистрации укажите ФИО и номер телефона
+        </span>
+        <form action="" class="form-registration" id="form-registration">
+          <div class="form-registration__input">
+            <div class="garage-field">
+              <input type="text" class="garage-field__input" name="registration__name" id="registration__name" placeholder=" ">
+              <label for="registration__name" class="garage-field__label">ФИО</label>
+            </div>
+          </div>
+          <div class="form-registration__input">
+            <div class="garage-field">
+              <input type="text" class="garage-field__input" name="registration__phone" id="registration__phone" placeholder=" " value="+7">
+              <label for="registration__phone" class="garage-field__label">Номер телефона</label>
+            </div>
+          </div>
+          <a href="./confirm.html" class="garage-button" disabled id="registration__submit">
+            <div class="garage-button__caption">Продолжить</div>
+          </a>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script type="module">
+    import {
+      registration
+    } from "../../js/components/auth.js";
+    registration()
+  </script>
 </body>
 
 </html>
