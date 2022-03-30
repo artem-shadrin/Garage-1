@@ -44,12 +44,29 @@
     </div>
   </section>
   <script type="module">
-    import {
-      checkCode
-    } from "../../js/components/auth.js";
-    document.addEventListener('DOMContentLoaded', () => {
-      checkCode();
-    })
+    const checkCode = () => {
+      const containerEl = document.querySelector(".auth__content");
+      const smsFormEl = document.querySelector(".sms-code__form");
+      containerEl?.classList.add("auth__content--sms-code");
+
+      let code = "";
+      smsFormEl?.addEventListener("input", (e) => {
+        if (e.target.value.length >= 1) {
+          if (e.target.id !== "sms-code-6") {
+            document
+              .getElementById(
+                e.target.id.replace(/\d+$/, function(n) {
+                  return ++n;
+                })
+              )
+              .focus();
+          } else {
+            window.location = "../main/index.html";
+          }
+        }
+      });
+    };
+    checkCode();
   </script>
 </body>
 

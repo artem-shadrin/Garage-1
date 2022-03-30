@@ -29,17 +29,67 @@
             </div>
           </form>
         </div>
-        <div class="auth__text">У вас еще нет аккаунта? <a href="./register.html" class="auth__link" id="link__registration">Создать
+        <div class="auth__text">У вас еще нет аккаунта? <a href="register.html" class="auth__link" id="link__registration">Создать
             аккаунт</a>
         </div>
       </div>
     </div>
   </section>
   <script type="module">
-    import {
-      login
-    } from "../../js/components/auth.js";
-    login()
+    const login = () => {
+      const loginPhoneEl = document.getElementById("form-login");
+      const loginPhoneValueEl = document.getElementById("login__phone");
+      const loginPhoneBtnEl = document.getElementById("login__submit");
+      const linkRegistration = document.getElementById("link__registration");
+      let old = null;
+      loginPhoneValueEl.onclick = function(e) {
+        if (loginPhoneValueEl?.value.length <= 0) {
+          loginPhoneValueEl.value = "+7";
+        }
+      };
+      loginPhoneEl.oninput = function(e) {
+        var curLen = loginPhoneValueEl.value.length;
+        if (curLen < old) {
+          old--;
+          return;
+        }
+        if (curLen == 3 && /\d$/.test(loginPhoneValueEl.value)) {
+          let a = loginPhoneValueEl.value.split("");
+          a.splice(2, 0, "(");
+          a = a.join("");
+          loginPhoneValueEl.value = a;
+        }
+        if (curLen == 6) {
+          loginPhoneValueEl.value = loginPhoneValueEl.value + ")-";
+        }
+        if (curLen == 11) {
+          loginPhoneValueEl.value = loginPhoneValueEl.value + "-";
+        }
+        if (curLen == 14) {
+          loginPhoneValueEl.value = loginPhoneValueEl.value + "-";
+        }
+        if (curLen > 17) {
+          loginPhoneValueEl.value = loginPhoneValueEl.value.substring(
+            0,
+            loginPhoneValueEl.value.length - 1
+          );
+        }
+
+        if (loginPhoneValueEl.value.length === 17) {
+          loginPhoneBtnEl.disabled = false;
+        } else {
+          loginPhoneBtnEl.disabled = true;
+        }
+
+        old++;
+      };
+      loginPhoneEl.onsubmit = function(e) {
+        e.preventDefault();
+        window.location = "confirm.html";
+      };
+
+    };
+    login();
   </script>
 </body>
 

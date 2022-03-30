@@ -47,9 +47,61 @@
     </div>
   </section>
   <script type="module">
-    import {
-      registration
-    } from "../../js/components/auth.js";
+    const registration = () => {
+      const registrationFormEl = document.getElementById("form-registration");
+      const registrationPhoneValueEl = document.getElementById(
+        "registration__phone"
+      );
+      const registrationPhoneBtnEl = document.getElementById(
+        "registration__submit"
+      );
+      let old = null;
+      registrationPhoneValueEl?.addEventListener("click", function(e) {
+        if (registrationPhoneValueEl?.value.length <= 0) {
+          registrationPhoneValueEl.value = "+7(";
+        }
+      });
+      registrationFormEl?.addEventListener("input", function(e) {
+        var curLen = registrationPhoneValueEl.value.length;
+        if (curLen < old) {
+          old--;
+          return;
+        }
+        if (curLen == 3 && /\d$/.test(registrationPhoneValueEl.value)) {
+          let a = registrationPhoneValueEl.value.split("");
+          a.splice(2, 0, "(");
+          a = a.join("");
+          registrationPhoneValueEl.value = a;
+        }
+        if (curLen == 6) {
+          registrationPhoneValueEl.value = registrationPhoneValueEl.value + ")-";
+        }
+        if (curLen == 11) {
+          registrationPhoneValueEl.value = registrationPhoneValueEl.value + "-";
+        }
+        if (curLen == 14) {
+          registrationPhoneValueEl.value = registrationPhoneValueEl.value + "-";
+        }
+        if (curLen > 17) {
+          registrationPhoneValueEl.value =
+            registrationPhoneValueEl.value.substring(
+              0,
+              registrationPhoneValueEl.value.length - 1
+            );
+        }
+
+        if (registrationPhoneValueEl.value.length === 17) {
+          registrationPhoneBtnEl.disabled = false;
+        } else {
+          registrationPhoneBtnEl.disabled = true;
+        }
+
+        old++;
+      });
+      registrationFormEl?.addEventListener("submit", function(e) {
+        window.location = "confirm.html";
+      });
+    };
     registration()
   </script>
 </body>
