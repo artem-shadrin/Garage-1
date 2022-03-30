@@ -10,13 +10,17 @@
 </head>
 
 <body>
-  <section class="authorization">
-    <div class="container">
-      <a onclick="javascript:history.back();" class="section__back-button">
+  <header class="header_auth">
+		<div class="container">
+			<a onclick="javascript:history.back();" class="section__back-button">
         <svg class="i-icon i-icon--md">
           <use xlink:href="../../icons/sprite.svg#ic_arrowback"></use>
         </svg>
       </a>
+		</div>
+	</header>
+  <section class="authorization">
+    <div class="container">
       <div class="sms-code">
         <h2 class="section__title sms-code__title">Введите код из SMS</h2>
         <span class="section__subtitle sms-code__subtitle">
@@ -39,6 +43,7 @@
       </div>
     </div>
   </section>
+  <script src="../../js/components/auth.js"></script>
 </body>
 
 </html>

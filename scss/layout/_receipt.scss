@@ -7,17 +7,13 @@
     font-size: 22px;
     line-height: 32px;
     /* identical to box height, or 145% */
-
     letter-spacing: -0.3px;
-
     color: #000000;
     margin-bottom: 16px;
   }
-
   &__info {
     margin-bottom: 8px;
   }
-
   &__btn {
     margin-bottom: 16px;
   }
@@ -33,17 +29,13 @@
     font-size: 17px;
     line-height: 141%;
     /* identical to box height, or 141% */
-
     letter-spacing: -0.3px;
-
     color: #000000;
   }
-
   &__list {
     padding: 0;
     margin-left: 16px;
   }
-
   &__item {
     & + & {
       margin-top: 8px;
@@ -58,8 +50,14 @@
     margin-top: 8px;
   }
 }
-
 .indications {
+  &__form{
+    form{
+      .indications__input{
+        margin-top: 16px;
+      }
+    }
+  }
   &--details {
     padding-top: 56px;
   }
@@ -70,7 +68,6 @@
     font-size: 22px;
     line-height: 32px;
     /* identical to box height, or 145% */
-
     text-align: center;
     letter-spacing: -0.3px;
     margin-bottom: 8px;
@@ -78,7 +75,6 @@
       text-align: left;
     }
   }
-
   &__subtitle {
     font-weight: 400;
     font-size: 15px;
@@ -86,7 +82,6 @@
     /* or 160% */
     margin-bottom: 24px;
     letter-spacing: -0.3px;
-
     color: #939393;
   }
   &__btn {

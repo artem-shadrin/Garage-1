@@ -13,7 +13,7 @@
 <body>
   <section class="home">
     <div class="container">
-      <h2 class="section__title home__title">Моя собственность</h1>
+      <h1 class="section__title home__title">Моя собственность</h1>
       <div class="home__own slider">
         <div class="slide">
           <a href="own.html" class="garage-setting-button home__own-button" id="data-profile">
@@ -52,29 +52,55 @@
           </ul>
         </div>
       </div>
-      <div class="home__button-add">
+      <a href="./new.html" class="home__button-add">
         <span class="garage-setting-button__label text">
           <svg class="i-icon i-icon--md">
             <use xlink:href="../../icons/sprite.svg#ic_plus"></use>
           </svg>
           Добавить собственность
         </span>
-      </div>
+      </a>
     </div>
     <div class="home__news">
       <h2 class="section__title home__news-title">Новости</h1>
       <div class="home__news-slider slider">
-        <div class="item">
+        <a href="./news.html" class="item">
           <h2 class="item__title">Новые условия аренды</h2>
           <div class="item__text">В связи с ситуацией в мире, условия аренды наших гаражей изменились. Теперь недоступн...</div>
-        </div>
-        <div class="item">
+        </a>
+        <a href="./news.html" class="item">
           <h2 class="item__title">Новые условия аренды</h2>
           <div class="item__text">В связи с ситуацией в мире, условия аренды наших гаражей изменились. Теперь недоступн...</div>
-        </div>
-        <div class="item">
+        </a>
+        <a href="./news.html" class="item">
           <h2 class="item__title">Новые условия аренды</h2>
           <div class="item__text">В связи с ситуацией в мире, условия аренды наших гаражей изменились. Теперь недоступн...</div>
+        </a>
+      </div>
+    </div> 
+    <div class="home__vote">
+      <h2 class="section__title home__news-title">Голосования</h2>
+      <div class="container">
+        <div class="garage-votecard">
+          <span class="garage-votecard__title">Согласование въезда через КПП №1 по документам</span>
+          <form class="garage-votecard__form">
+            <button class="garage-variant" disabled>
+              <span class="garage-variant__indicator"></span>
+              <span for="variant-2" class="garage-variant__text">
+                <span class="garage-variant__pecent">52%</span>
+                Только по паспорту</span>
+            </button>
+            <button class="garage-variant garage-variant--select" disabled>
+              <span class="garage-variant__indicator"></span>
+              <span for="variant-2" class="garage-variant__text">
+                <span class="garage-variant__pecent">48%</span>
+                Только по ПТС</span>
+            </button>
+          </form>
+          <span class="garage-votecard__statistics">
+            Всего голосов:
+            <span class="garage-votecard__statistics-numb">125</span>
+          </span>
         </div>
       </div>
     </div> 
@@ -94,7 +120,7 @@
             </a>
           </li>
           <li class="garage-navigation__item" id="link-receipt">
-            <a href="..//receipt/index.html" class="garage-link">
+            <a href="../receipt/index.html" class="garage-link">
               <div class="garage-link__icon">
                 <svg class="i-icon i-icon--md">
                   <use xlink:href="../../icons/sprite.svg#ic_receipt"></use>

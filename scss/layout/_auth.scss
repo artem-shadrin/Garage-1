@@ -1,3 +1,14 @@
+.header{
+    &_auth{
+        margin-top: 12px;
+
+    }
+}
+.authorization{
+    &.main{
+        margin-top: 84px;
+    }
+}
 .auth {
     &__content {
         width: 200%;
@@ -17,6 +28,7 @@
     &__link {
         margin: 0 auto;
         text-align: center;
+        color: $active-blue;
         &--hidden {
             z-index: -1;
             opacity: 0;
@@ -91,6 +103,9 @@
     }
 }
 .registration {
+    &__title{
+        margin-bottom: 8px;
+    }
     &__subtitle {
         margin-bottom: 8px;
     }
@@ -103,5 +118,15 @@
         &:last-child {
             margin-bottom: 32px;
         }
+    }
+}
+.form-login{
+    &__submit{
+        margin-bottom: 24px;
+    }
+}
+.form-registration{
+    &__input{
+        margin-bottom: 32px;
     }
 }

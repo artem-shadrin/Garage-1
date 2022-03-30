@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+	<header class="header_main">
+		<div class="container">
+			<div class="header__link">
+				<a href="./index.html" class="section__back-button">
+					<svg class="i-icon i-icon--md">
+						<use xlink:href="../../icons/sprite.svg#ic_arrowback"></use>
+					</svg>
+				</a>
+			</div>
+			<h3 class="header__title">Гараж/место  №5</h3>
+			<div class="header__link">
+				<a href="./own.html" class="section__back-button">
+					<svg class="i-icon i-icon--md">
+						<use xlink:href="../../icons/sprite.svg#ic_check"></use>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</header>
+  <section class="home inner">
+		<div class="container">
+			<h1 class="section__title home__title">Гараж/место  №5</h1>
+			<div class="own-data__info">
+				<div class="own-data__field">
+					<div class="garage-field">
+						<input type="text" class="garage-field__input" value="Спиридонов Олег Викторович" name="own__name"
+							id="own__name" placeholder=" ">
+						<label for="own__name" class="garage-field__label">ФИО</label>
+					</div>
+					<div class="wrap">
+						<div class="garage-field">
+							<input type="text" class="garage-field__input" value="№5" name="own__tel"
+								id="own__tel" placeholder=" ">
+							<label for="own__tel" class="garage-field__label">Номер гаража/места</label>
+						</div>
+						<div class="garage-field">
+							<input type="text" class="garage-field__input" value="16 кв. м." name="own__email"
+								id="own__email" placeholder=" ">
+							<label for="own__email" class="garage-field__label">Площадь</label>
+						</div>
+					</div>
+					<div class="garage-field">
+						<input type="text" class="garage-field__input" value="70-70-06/011/2020-564" name="own__name"
+							id="own__name_1" placeholder=" ">
+						<label for="own__name_1" class="garage-field__label">Кадастровый номер</label>
+					</div>
+					<div class="garage-field">
+						<input type="text" class="garage-field__input" value="15.07.2020" name="own__name"
+							id="own__name_2" placeholder=" ">
+						<label for="own__name_2" class="garage-field__label">Дата покупки</label>
+					</div>
+					<div class="garage-field">
+						<input type="text" class="garage-field__input" value="Договор купли-продажи №14" name="own__name"
+							id="own__name_3" placeholder=" ">
+						<label for="own__name_3" class="garage-field__label">Документы - основание</label>
+					</div>
+					<a href="./own.html" class="garage-button" disabled id="registration__submit">
+						<div class="garage-button__caption">Сохранить изменения</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+  <footer>
+    <div class="container">
+      <nav class="garage-navigation">
+        <ul class="garage-navigation__list">
+          <li class="garage-navigation__item--active" id="link-home">
+            <a href="/pages/main/index.html" class="garage-link">
+              <div class="garage-link__icon">
+                <svg class="i-icon i-icon--md">
+                  <use xlink:href="../../icons/sprite.svg#ic_home"></use>
+                </svg>
+              </div>
+              <span class="garage-link__title">Главная</span>
+            </a>
+          </li>
+          <li class="garage-navigation__item" id="link-receipt">
+            <a href="/pages/receipt/index.html" class="garage-link">
+              <div class="garage-link__icon">
+                <svg class="i-icon i-icon--md">
+                  <use xlink:href="../../icons/sprite.svg#ic_receipt"></use>
+                </svg>
+              </div>
+              <span class="garage-link__title">Квитанции</span>
+            </a>
+          </li>
+          <li class="garage-navigation__item" id="link-cameras">
+            <a href="/pages/camera/index.html" class="garage-link">
+              <div class="garage-link__icon">
+                <svg class="i-icon i-icon--md">
+                  <use xlink:href="../../icons/sprite.svg#ic_camera"></use>
+                </svg>
+              </div>
+              <span class="garage-link__title">Камеры</span>
+            </a>
+          </li>
+          <li class="garage-navigation__item garage-navigation__item" id="link-profile">
+            <a href="/pages/profile/index.html" class="garage-link">
+              <div class="garage-link__icon">
+                <svg class="i-icon i-icon--md">
+                  <use xlink:href="../../icons/sprite.svg#ic_profile"></use>
+                </svg>
+              </div>
+              <span class="garage-link__title">Профиль</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="../../js/script.js"></script>
+</body>
+
+</html>
