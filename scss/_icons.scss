@@ -11,17 +11,70 @@
 		width: 32px;
 		height: 32px;
 	}
+	stroke: #000;
+	fill: none;
 }
-.section__back-button{
-	.i-icon{
-		stroke: #2376F2;
+
+.garage-navigation {
+	&__item--active {
+		.i-icon {
+			stroke: #2376f2;
+		}
 	}
 }
 
-.garage-navigation{
-	&__item--active{
-		.i-icon{
-			stroke: #2376F2;
-		}
-	}
+.i-icon#ic_garage {
+}
+.i-icon#ic_home {
+}
+.i-icon#ic_phone {
+}
+.i-icon#ic_max {
+}
+.i-icon#ic_play {
+	fill: #fff;
+	stroke: #fff;
+}
+.i-icon#ic_profile {
+}
+.i-icon#ic_profilecard {
+}
+.i-icon#ic_receipt {
+}
+.i-icon#message {
+}
+.i-icon#pause {
+}
+.i-icon#pen {
+}
+.i-icon#plus {
+	stroke: #2376f2;
+}
+.i-icon#send {
+}
+.i-icon#status {
+}
+.i-icon#exit {
+	stroke: red;
+}
+.i-icon#ic_arrow {
+}
+.i-icon#ic_arrowback {
+	stroke: #2376f2;
+}
+.i-icon#ic_arrows {
+}
+.i-icon#ic_camera {
+}
+.i-icon#ic_check {
+	stroke: #0bbb12;
+}
+.i-icon#ic_copy {
+}
+.i-icon#ic_close {
+}
+.i-icon#ic_garage {
+}
+.i-icon#ic_plus {
+	stroke: #2376f2;
 }

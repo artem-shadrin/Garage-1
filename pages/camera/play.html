@@ -13,7 +13,7 @@
   <section class="cameras cameras--play">
     <div class="container">
       <a onclick="javascript:history.back();" class="section__back-button">
-        <svg class="i-icon i-icon--md">
+        <svg class="i-icon i-icon--md" id="ic_arrowback">
           <use xlink:href="../../icons/sprite.svg#ic_arrowback"></use>
         </svg>
       </a>
@@ -22,16 +22,13 @@
           <div class="camera-primary__video">
             <img src="../../images/camera/1.jpg" alt="">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3991 6.89628L23.2311 14.6349C24.2563 15.2528 24.2563 16.7483 23.2311 17.3662L10.3991 25.1048C9.34373 25.7403 8 24.9758 8 23.7383V8.26116C8 7.02369 9.34373 6.25923 10.3991 6.89628Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3991 6.89628L23.2311 14.6349C24.2563 15.2528 24.2563 16.7483 23.2311 17.3662L10.3991 25.1048C9.34373 25.7403 8 24.9758 8 23.7383V8.26116C8 7.02369 9.34373 6.25923 10.3991 6.89628Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
             <div class="wrap">
               <p class="camera-primary__video__date">05.03. 2022 03:34:35</p>
-              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 6L12 12" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M13.5 6H18V10.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M7 17L13 11" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M11.5 17H7V12.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                
+              <svg class="i-icon i-icon--lg" id="ic_max">
+                <use xlink:href="../../icons/sprite.svg#ic_max"></use>
+              </svg>
             </div>
           </div>
           <h4 class="camera-primary__title">Центральный паркинг №1</h4>
@@ -44,8 +41,8 @@
             <h4 class="camera-card__title">Центральный паркинг №1</h4>
             <div class="camera-card__video">
               <img src="../../images/camera/1.jpg" alt="">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3991 6.89628L23.2311 14.6349C24.2563 15.2528 24.2563 16.7483 23.2311 17.3662L10.3991 25.1048C9.34373 25.7403 8 24.9758 8 23.7383V8.26116C8 7.02369 9.34373 6.25923 10.3991 6.89628Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <svg class="i-icon i-icon--lg" id="ic_play">
+                <use xlink:href="../../icons/sprite.svg#ic_play"></use>
               </svg>
             </div>
           </div>
@@ -55,8 +52,8 @@
             <h4 class="camera-card__title">Въезд №4</h4>
             <div class="camera-card__video">
               <img src="../../images/camera/2.jpg" alt="">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3991 6.89628L23.2311 14.6349C24.2563 15.2528 24.2563 16.7483 23.2311 17.3662L10.3991 25.1048C9.34373 25.7403 8 24.9758 8 23.7383V8.26116C8 7.02369 9.34373 6.25923 10.3991 6.89628Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <svg class="i-icon i-icon--lg" id="ic_play">
+                <use xlink:href="../../icons/sprite.svg#ic_play"></use>
               </svg>
             </div>
           </div>
@@ -66,8 +63,8 @@
             <h4 class="camera-card__title">КПП №2, ЮЗАО</h4>
             <div class="camera-card__video">
               <img src="../../images/camera/3.jpg" alt="">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3991 6.89628L23.2311 14.6349C24.2563 15.2528 24.2563 16.7483 23.2311 17.3662L10.3991 25.1048C9.34373 25.7403 8 24.9758 8 23.7383V8.26116C8 7.02369 9.34373 6.25923 10.3991 6.89628Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <svg class="i-icon i-icon--lg" id="ic_play">
+                <use xlink:href="../../icons/sprite.svg#ic_play"></use>
               </svg>
             </div>
           </div>
@@ -77,8 +74,8 @@
             <h4 class="camera-card__title">Центральный паркинг №3</h4>
             <div class="camera-card__video">
               <img src="../../images/camera/4.jpg" alt="">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3991 6.89628L23.2311 14.6349C24.2563 15.2528 24.2563 16.7483 23.2311 17.3662L10.3991 25.1048C9.34373 25.7403 8 24.9758 8 23.7383V8.26116C8 7.02369 9.34373 6.25923 10.3991 6.89628Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <svg class="i-icon i-icon--lg" id="ic_play">
+                <use xlink:href="../../icons/sprite.svg#ic_play"></use>
               </svg>
             </div>
           </div>

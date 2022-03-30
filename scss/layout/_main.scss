@@ -1,40 +1,40 @@
-.header{
-	&_main{
+.header {
+	&_main {
 		margin-bottom: 24px;
 		padding-top: 12px;
-		.container{
+		.container {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 		}
-		.header__link{
-			.section__back-button{
+		.header__link {
+			.section__back-button {
 				margin-bottom: 0;
 			}
 		}
 	}
 }
-.home{
+.home {
 	padding-top: 72px;
-	height: 120vh;
-	&.news{
+	padding-bottom: 205px;
+	&.news {
 		padding: 0;
 		height: auto;
 	}
-	&.inner{
+	&.inner {
 		padding-top: 0;
 	}
-	&__title{
+	&__title {
 		margin-bottom: 16px;
 	}
-	&__own{
+	&__own {
 		background-color: $grey-1;
 		border-radius: 12px;
-		&-button{
+		&-button {
 			position: relative;
-			&::after{
+			&::after {
 				display: block;
-				content: '';
+				content: "";
 				padding-top: 12px;
 				border-bottom: 1px solid #00000020;
 				position: absolute;
@@ -66,105 +66,105 @@
 					visibility: hidden;
 				}
 			}
-			li.slick-active{
+			li.slick-active {
 				width: 16px;
 				background: $active-blue;
 				border-radius: 12px;
 			}
-		}        
+		}
 	}
-	&__button-add{
+	&__button-add {
 		display: block;
 		border: 1px solid $disable-blue;
 		border-radius: 12px;
 		margin-top: 40px;
 		text-align: center;
 		padding: 16px 0;
-		.text{
+		.text {
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			color: $active-blue;
-			svg{
+			svg {
 				margin-right: 7px;
 			}
 		}
 	}
-	&__news{
+	&__news {
 		margin-top: 24px;
-		&-title{
+		&-title {
 			margin-left: 34px;
 			margin-bottom: 8px;
 		}
-		&-slider{
+		&-slider {
 			margin-left: 34px;
-			.item{
+			.item {
 				width: 240px;
 				background-color: $grey-1;
 				padding: 16px 8px 19px 12px;
 				border-radius: 12px;
 				margin-right: 8px;
-				&__title{
+				&__title {
 					font-size: 17px;
 					margin-bottom: 8px;
 				}
-				&__text{
+				&__text {
 					line-height: 23px;
 					color: $grey-2;
 				}
 			}
 		}
 	}
-	&__vote{
+	&__vote {
 		margin-top: 16px;
 	}
 }
-.own__list{
+.own__list {
 	padding: 15px 30px 16px;
 	margin: 0;
-	.item{
+	.item {
 		margin-bottom: 4px;
-		&:last-child{
+		&:last-child {
 			margin: 0;
 		}
 	}
 }
-.own{
-	&-data{
-		&__field{
-			.wrap{
+.own {
+	&-data {
+		&__field {
+			.wrap {
 				display: flex;
-				.garage-field{
+				.garage-field {
 					margin-right: 24px;
-					&:first-child{
-						&__label{
+					&:first-child {
+						&__label {
 							font-size: 15px;
 						}
 					}
-					&:last-child{
+					&:last-child {
 						margin-right: 0;
 					}
 				}
 			}
-			.garage-field{
+			.garage-field {
 				margin-bottom: 8px;
-				&__input{
+				&__input {
 					background-color: transparent;
 					margin-top: 26px;
 				}
-				&:nth-child(3){
+				&:nth-child(3) {
 					flex-direction: column;
 					margin-bottom: 64px;
-					&::after{
+					&::after {
 						display: block;
 						margin-top: 24px;
-						content: '';
+						content: "";
 						width: 100%;
 						border-bottom: 1px solid #00000020;
 					}
 				}
 			}
-			.garage-button{
+			.garage-button {
 				margin-top: 32px;
 			}
 		}
