@@ -5,6 +5,7 @@
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: "SF Pro Display";
   src: url("../fonts/SFPro/SFProDisplay-Heavy.eot");
@@ -12,6 +13,7 @@
   font-weight: 900;
   font-style: normal;
 }
+
 @font-face {
   font-family: "SF Pro Display";
   src: url("../fonts/SFPro/SFProDisplay-UltralightItalic.eot");
@@ -19,6 +21,7 @@
   font-weight: 200;
   font-style: italic;
 }
+
 @font-face {
   font-family: "SF Pro Display";
   src: url("../fonts/SFPro/SFProDisplay-RegularItalic.eot");
@@ -26,6 +29,7 @@
   font-weight: normal;
   font-style: italic;
 }
+
 @font-face {
   font-family: "SF Pro Display";
   src: url("../fonts/SFPro/SFProDisplay-Thin.eot");
@@ -33,6 +37,7 @@
   font-weight: 100;
   font-style: normal;
 }
+
 @font-face {
   font-family: "SF Pro Display";
   src: url("../fonts/SFPro/SFProDisplay-Light.eot");
@@ -40,6 +45,7 @@
   font-weight: 200;
   font-style: normal;
 }
+
 @font-face {
   font-family: "SF Pro Display";
   src: url("../fonts/SFPro/SFProDisplay-BlackItalic.eot");
@@ -47,6 +53,7 @@
   font-weight: 900;
   font-style: italic;
 }
+
 @font-face {
   font-family: "SF Pro Display";
   src: url("../fonts/SFPro/SFProDisplay-Bold.eot");
@@ -54,6 +61,7 @@
   font-weight: bold;
   font-style: normal;
 }
+
 @font-face {
   font-family: "SF Pro Display";
   src: url("../fonts/SFPro/SFProDisplay-Black.eot");
@@ -61,6 +69,7 @@
   font-weight: 900;
   font-style: normal;
 }
+
 @font-face {
   font-family: "SF Pro Display";
   src: url("../fonts/SFPro/SFProDisplay-SemiboldItalic.eot");
@@ -68,6 +77,7 @@
   font-weight: 600;
   font-style: italic;
 }
+
 @font-face {
   font-family: "SF Pro Display";
   src: url("../fonts/SFPro/SFProDisplay-Ultralight.eot");
@@ -75,6 +85,7 @@
   font-weight: 200;
   font-style: normal;
 }
+
 @font-face {
   font-family: "SF Pro Display";
   src: url("../fonts/SFPro/SFProDisplay-LightItalic.eot");
@@ -82,6 +93,7 @@
   font-weight: 200;
   font-style: italic;
 }
+
 @font-face {
   font-family: "SF Pro Display";
   src: url("../fonts/SFPro/");
@@ -89,6 +101,7 @@
   font-weight: 100;
   font-style: italic;
 }
+
 @font-face {
   font-family: "SF Pro Display";
   src: url("../fonts/SFPro/SFProDisplay-MediumItalic.eot");
@@ -96,6 +109,7 @@
   font-weight: 500;
   font-style: italic;
 }
+
 @font-face {
   font-family: "SF Pro Display";
   src: url("../fonts/SFPro/SFProDisplay-Semibold.eot");
@@ -103,6 +117,7 @@
   font-weight: 600;
   font-style: normal;
 }
+
 @font-face {
   font-family: "SF Pro Display";
   src: url("../fonts/SFPro/SFProDisplay-HeavyItalic.eot");
@@ -110,6 +125,7 @@
   font-weight: 900;
   font-style: italic;
 }
+
 @font-face {
   font-family: "SF Pro Display";
   src: url("../fonts/SFPro/SFProDisplay-Regular.eot");
@@ -117,6 +133,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "SF Pro Display";
   src: url("../fonts/SFPro/SFProDisplay-BoldItalic.eot");
@@ -124,10 +141,12 @@
   font-weight: bold;
   font-style: italic;
 }
+
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -197,6 +216,7 @@ h6 {
   padding-top: 70px;
   width: 312px;
 }
+
 .left__logo {
   padding-left: 24px;
   margin-bottom: 64px;
@@ -208,35 +228,55 @@ h6 {
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 20px 40px;
   border-bottom: 1px solid #e9e9e9;
 }
+
 .header__tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 20px;
 }
+
 .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 12px 16px;
   cursor: pointer;
   border-radius: 12px;
 }
+
 .button__icon {
   margin-right: 7px;
   line-height: 0;
 }
+
 .button__caption {
   white-space: nowrap;
 }
+
 .button--active {
   background: #2376f2;
   color: #fff;
 }
+
 .button--transparent {
   border: 1px solid #e9e9e9;
 }
@@ -245,6 +285,7 @@ h6 {
   padding: 0;
   list-style: none;
 }
+
 .menu__item {
   height: 48px;
 }
@@ -252,16 +293,25 @@ h6 {
 .item-menu {
   height: 100%;
   padding-left: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
   color: #878787;
 }
+
 .item-menu--active, .item-menu:hover {
   background: #e9f1fe;
 }
+
 .item-menu__icon {
   margin-right: 20px;
 }
 
+.news {
+  margin-top: 30px;
+}
 /*# sourceMappingURL=admin-style.css.map */
