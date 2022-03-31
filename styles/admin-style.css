@@ -574,17 +574,29 @@ p {
   padding: 20px 46px 20px 26px;
   border-left: 1px solid #efefef;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 288325124eee272aa5767986b531e8f8407f3dbc
 .create__link,
 .create__add__link,
 .create__survey__link {
   display: flex;
   align-items: center;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 288325124eee272aa5767986b531e8f8407f3dbc
 .create__title,
 .create__add__title,
 .create__survey__title {
   font-size: 20px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 288325124eee272aa5767986b531e8f8407f3dbc
 .create__button,
 .create__add__button,
 .create__survey__button {
@@ -592,53 +604,93 @@ p {
   border-radius: 12px;
   margin-right: 20px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 288325124eee272aa5767986b531e8f8407f3dbc
 .create_active,
 .create__add_active,
 .create__survey_active {
   transform: translateX(0%);
   right: 0;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 288325124eee272aa5767986b531e8f8407f3dbc
 .create-data__info,
 .create__add-data__info,
 .create__survey-data__info {
   margin-top: 30px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 288325124eee272aa5767986b531e8f8407f3dbc
 .create-data__field .garage-field,
 .create__add-data__field .garage-field,
 .create__survey-data__field .garage-field {
   margin-bottom: 20px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 288325124eee272aa5767986b531e8f8407f3dbc
 .create-data__field .garage-field:last-child,
 .create__add-data__field .garage-field:last-child,
 .create__survey-data__field .garage-field:last-child {
   margin-bottom: 20px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 288325124eee272aa5767986b531e8f8407f3dbc
 .create-data__field .garage-field:nth-child(2),
 .create__add-data__field .garage-field:nth-child(2),
 .create__survey-data__field .garage-field:nth-child(2) {
   min-height: 196px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 288325124eee272aa5767986b531e8f8407f3dbc
 .create-data__field .garage-field .garage-field__label,
 .create__add-data__field .garage-field .garage-field__label,
 .create__survey-data__field .garage-field .garage-field__label {
   top: 0;
   left: 0;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 288325124eee272aa5767986b531e8f8407f3dbc
 .create-data__field .garage-field .garage-field__input,
 .create__add-data__field .garage-field .garage-field__input,
 .create__survey-data__field .garage-field .garage-field__input {
   resize: none;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 288325124eee272aa5767986b531e8f8407f3dbc
 .create-ad-btn,
 .create__add-ad-btn,
 .create__survey-ad-btn {
   margin-bottom: 10px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 288325124eee272aa5767986b531e8f8407f3dbc
 .create-ad-btn .button,
 .create__add-ad-btn .button,
 .create__survey-ad-btn .button {
   justify-content: center;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 288325124eee272aa5767986b531e8f8407f3dbc
 .create-ad-btn:nth-child(4),
 .create__add-ad-btn:nth-child(4),
 .create__survey-ad-btn:nth-child(4) {
