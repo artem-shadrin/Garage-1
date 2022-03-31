@@ -452,7 +452,6 @@ p {
   justify-content: flex-start;
 }
 
-<<<<<<< HEAD
 .header__find-input__body {
   display: flex;
   align-items: center;
@@ -500,8 +499,6 @@ p {
   stroke: #000;
 }
 
-=======
->>>>>>> c19042fb67e94115a7ee833226a609c98970626c
 .button {
   display: flex;
   align-items: center;
@@ -660,10 +657,6 @@ p {
 }
 
 .create__button, .create__add__button, .create__survey__button {
-<<<<<<< HEAD
-=======
-  padding: 18px;
->>>>>>> c19042fb67e94115a7ee833226a609c98970626c
   background-color: #f8f8f8;
   border-radius: 12px;
   margin-right: 20px;
@@ -738,10 +731,7 @@ p {
   padding: 10px 40px 16px;
   background-color: #f8f8f8;
   margin-bottom: 8px;
-<<<<<<< HEAD
   margin-left: 0;
-=======
->>>>>>> c19042fb67e94115a7ee833226a609c98970626c
 }
 
 .messages__wrap .message__content {
@@ -781,11 +771,7 @@ p {
 .message__wrap {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
   width: calc(100% - 390px);
-=======
-  width: calc(100% - 350px);
->>>>>>> c19042fb67e94115a7ee833226a609c98970626c
   margin-right: 40px;
 }
 
@@ -816,7 +802,6 @@ p {
 
 .message__chat {
   width: 350px;
-<<<<<<< HEAD
   height: 100vh;
   position: fixed;
   top: 0;
@@ -1443,7 +1428,5 @@ p {
 .members__list--item .wrap-buttons .create-ad-btn:nth-child(2) .item-menu__icon .item-menu__icon {
   margin-right: 0;
   margin-left: 4px;
-=======
->>>>>>> c19042fb67e94115a7ee833226a609c98970626c
 }
 /*# sourceMappingURL=admin-style.css.map */
