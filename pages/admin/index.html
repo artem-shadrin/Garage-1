@@ -84,7 +84,7 @@
       <h1 class="title header__title">Новости и опросы</h1>
       <div class="header__tools">
         <div class="header__create-ad-btn">
-          <a href="#" class="button button--active">
+          <a href="#" class="button button--active button--add__news visible">
             <span class="button__icon">
               <svg class="i-icon" id="ic_pluse">
                 <use xlink:href="../../icons/admin-sprite.svg#ic_pluse"></use>
@@ -93,7 +93,7 @@
           </a>
         </div>
         <div class="header__create-vote-btn">
-          <a href="#" class="button button--transparent">
+          <a href="#" class="button button--transparent button--add visible">
             <span class="button__icon">
               <svg class="i-icon" id="business">
                 <use xlink:href="../../icons/admin-sprite.svg#ic_business"></use>
@@ -221,6 +221,84 @@
           <div class="create-ad-btn">
             <a href="#" class="button button--red">
               <span class="text button__caption">Удалить объявление</span>
+            </a>
+          </div>
+				</div>
+			</div>
+    </div>
+    <div id="add" class="create__add">
+      <header class="create_main">
+        <div class="container">
+          <div class="create__link">
+            <a href="#" class="section__back-button create__button">
+              <svg class="i-icon i-icon--md" id="ic_close">
+                  <use xlink:href="../../icons/sprite.svg#ic_close"></use>
+              </svg>
+            </a>
+            <h3 class="title create__title">Новое объявление</h3>
+          </div>
+        </div>
+      </header>
+      <div class="create-data__info">
+				<div class="create-data__field">
+          <div class="garage-field">
+						<input type="text" class="garage-field__input" value="" name="create__name"
+							id="add__name_1" placeholder=" ">
+						<label for="add__name_1" class="garage-field__label">Заголовок</label>
+					</div>
+          <div class="garage-field">
+						<label for="add__name_2" class="garage-field__label">Описание</label>
+            <textarea class="garage-field__input" name="add__name" id="add__name_2" 
+              cols="30" rows="6" placeholder=" "></textarea>
+					</div>
+          <div class="create-ad-btn">
+            <a href="#" class="button button--active">
+              <span class="text button__caption">Добавить объявление</span>
+            </a>
+          </div>
+          <div class="create-ad-btn">
+            <a href="#" class="button button--transparent">
+              <span class="text button__caption">Отменить</span>
+            </a>
+          </div>
+				</div>
+			</div>
+    </div>
+    <div id="add_survey" class="create__survey">
+      <header class="create_main">
+        <div class="container">
+          <div class="create__link">
+            <a href="#" class="section__back-button create__button">
+              <svg class="i-icon i-icon--md" id="ic_close">
+                  <use xlink:href="../../icons/sprite.svg#ic_close"></use>
+              </svg>
+            </a>
+            <h3 class="title create__title">Новый опрос</h3>
+          </div>
+        </div>
+      </header>
+      <div class="create-data__info">
+				<div class="create-data__field">
+          <div class="garage-field">
+						<input type="text" class="garage-field__input" value="" name="create__name"
+							id="add__name_1" placeholder=" ">
+						<label for="add__name_1" class="garage-field__label">Заголовок</label>
+					</div>
+          <div class="garage-field">
+						<label for="add__name_2" class="garage-field__label">Варианты ответа</label>
+            <input type="text" class="garage-field__input" value="" name="create__name"
+							id="add__name_2" placeholder=" ">
+            <input type="text" class="garage-field__input" value="" name="create__name"
+							id="add__name_2" placeholder=" ">
+					</div>
+          <div class="create-ad-btn">
+            <a href="#" class="button button--active">
+              <span class="text button__caption">Добавить объявление</span>
+            </a>
+          </div>
+          <div class="create-ad-btn">
+            <a href="#" class="button button--transparent">
+              <span class="text button__caption">Отменить</span>
             </a>
           </div>
 				</div>
