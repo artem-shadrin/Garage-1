@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../styles/admin-style.css">
+	<title>Document</title>
+</head>
+
+<div class="left">
+	<div class="left__logo"><img src="../../images/admin/logo.png" width="175px" height="48px" alt=""></div>
+	<div class="left__menu">
+		<nav class="menu">
+			<ul class="menu__list">
+				<li class="menu__item">
+					<a href="./index.html" class="item-menu">
+						<div class="item-menu__icon">
+							<svg class="i-icon" id="ic_news">
+								<use xlink:href="../../icons/admin-sprite.svg#ic_news"></use>
+							</svg>
+						</div>
+						<div class="text item-menu__text">Новости и опросы</div>
+					</a>
+				</li>
+				<li class="menu__item">
+					<a href="./messages.html" class="item-menu">
+						<div class="item-menu__icon">
+							<svg class="i-icon" id="ic_message">
+								<use xlink:href="../../icons/admin-sprite.svg#ic_message"></use>
+							</svg>
+						</div>
+						<div class="text item-menu__text">Сообщения</div>
+					</a>
+				</li>
+				<li class="menu__item">
+					<a href="./accounting.html" class="item-menu item-menu--active">
+						<div class="item-menu__icon">
+							<svg class="i-icon" id="ic_payment">
+								<use xlink:href="../../icons/admin-sprite.svg#ic_payment"></use>
+							</svg>
+						</div>
+						<div class="text item-menu__text">Бухгалтерия</div>
+					</a>
+				</li>
+				<li class="menu__item">
+					<a href="./data.html" class="item-menu">
+						<div class="item-menu__icon">
+							<svg class="i-icon" id="ic_receipt">
+								<use xlink:href="../../icons/admin-sprite.svg#ic_receipt"></use>
+							</svg>
+						</div>
+						<div class="text item-menu__text">Показания счетчиков</div>
+					</a>
+				</li>
+				<li class="menu__item">
+					<a href="./cameras.html" class="item-menu">
+						<div class="item-menu__icon">
+							<svg class="i-icon" id="ic_camera">
+								<use xlink:href="../../icons/admin-sprite.svg#ic_camera"></use>
+							</svg>
+						</div>
+						<div class="text item-menu__text">Онлайн камеры</div>
+					</a>
+				</li>
+				<li class="menu__item">
+					<a href="./members.html" class="item-menu">
+						<div class="item-menu__icon">
+							<svg class="i-icon" id="ic_members">
+								<use xlink:href="../../icons/admin-sprite.svg#ic_members"></use>
+							</svg>
+						</div>
+						<div class="text item-menu__text">Члены кооператива</div>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>
+<div class="right">
+	<header class="header header__message">
+    <a onclick="javascript:history.back();" class="section__back-button">
+      <svg class="i-icon i-icon--md" id="ic_arrowback">
+        <use xlink:href="../../icons/sprite.svg#ic_arrowback"></use>
+      </svg>
+    </a>
+		<h1 class="title header__title">Спиридонов Олег Викторович</h1>
+	</header>
+	<section class="message">
+    <div class="message__wrap">
+      <div class="message_content">
+        <span class="message__text">Здравствуйте! 
+          Возникли проблемы при проезде через КПП №1, помогите решить, пожалуйста
+        </span>
+      </div>
+      <div class="message_content">
+        <span class="message__text">Здравствуйте! 
+          Возникли проблемы при проезде через КПП №1, помогите решить, пожалуйста
+        </span>
+      </div>
+      <div class="message_content">
+        <span class="message__text">Здравствуйте! 
+          Возникли проблемы при проезде через КПП №1, помогите решить, пожалуйста
+        </span>
+      </div>	
+    </div>
+    <div id="chat" class="message__chat">
+      <header class="chat_main">
+        <div class="container">
+          <div class="chat__link">
+            <h3 class="title chat__title">Чаты</h3>
+          </div>
+        </div>
+      </header>
+      <div class="chat-data__info">
+        <div class="chat-data__field">
+          <a href="#" class="message__right">
+            <h3 class="title message__name">Ящеров Константин Константинович</h3>
+            <span class="message__text">Добрый день! 
+              Попробуйте использовать при проезде QR-код, выданный вам при регистрации в нашем кооперативе
+            </span>
+          </a>
+          <a href="#" class="message__right">
+            <h3 class="title message__name">Тепляков Алексей Павлович</h3>
+            <span class="message__text">Добрый день! 
+              Попробуйте использовать при проезде QR-код, выданный вам при регистрации в нашем кооперативе
+            </span>
+          </a>
+          <a href="#" class="message__right">
+            <h3 class="title message__name">Латышев Кирилл Сергеевич</h3>
+            <span class="message__text">Добрый день! 
+              Попробуйте использовать при проезде QR-код, выданный вам при регистрации в нашем кооперативе
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer class="chat__footer">
+      <hr>
+      <div class="chat-input">
+        <div class="chat-input__body">
+          <div class="wrap">
+            <div class="chat-input__add-file">
+              <label class="chat-input__file">
+                <span class="chat-input__file-title">
+                  <svg class="i-icon i-icon--md">
+                    <use xlink:href="../../icons/sprite.svg#status"></use>
+                  </svg></span>
+                <!-- <input class="chat-input__file-data" type="file" id="chat-file-1" disabled> -->
+              </label>
+            </div>
+            <div class="chat-input__text">
+              <input type="text" name="profile__email" id="profile__email" placeholder="Введите сообщение">
+            </div>
+          </div>
+          <div class="chat-input__send-btn">
+            <svg class="i-icon i-icon--md" id="send">
+              <use xlink:href="../../icons/sprite.svg#send"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+	</section>
+</div>
+
+<body>
+
+</body>
+
+</html>

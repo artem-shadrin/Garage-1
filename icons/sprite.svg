@@ -115,6 +115,17 @@
     <path d="M16.5 12H8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 21V21C7.529 21 3.5 16.971 3.5 12V12C3.5 7.029 7.529 3 12.5 3V3C17.471 3 21.5 7.029 21.5 12V12C21.5 16.971 17.471 21 12.5 21Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
   </symbol>
-
-
+  <symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="ic_search">
+    <path d="M15.7138 6.8382C18.1647 9.28913 18.1647 13.2629 15.7138 15.7138C13.2629 18.1647 9.28913 18.1647 6.8382 15.7138C4.38727 13.2629 4.38727 9.28913 6.8382 6.8382C9.28913 4.38727 13.2629 4.38727 15.7138 6.8382" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M19 19L15.71 15.71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" id="ic_play_desc">
+    <path d="M0 24C0 10.7452 10.7452 0 24 0V0C37.2548 0 48 10.7452 48 24V24C48 37.2548 37.2548 48 24 48V48C10.7452 48 0 37.2548 0 24V24Z" fill="#F8F8F8"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.7993 17.1721L29.4233 22.9761C30.1922 23.4395 30.1922 24.5611 29.4233 25.0246L19.7993 30.8285C19.0078 31.3051 18 30.7318 18 29.8037V18.1958C18 17.2677 19.0078 16.6944 19.7993 17.1721Z" fill="black" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" id="ic_pause">
+    <path d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24Z" fill="#F8F8F8"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M28 30V30C27.172 30 26.5 29.328 26.5 28.5V19.5C26.5 18.672 27.172 18 28 18V18C28.828 18 29.5 18.672 29.5 19.5V28.5C29.5 29.328 28.828 30 28 30Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 30V30C19.172 30 18.5 29.328 18.5 28.5V19.5C18.5 18.672 19.172 18 20 18V18C20.828 18 21.5 18.672 21.5 19.5V28.5C21.5 29.328 20.828 30 20 30Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
 </svg>
