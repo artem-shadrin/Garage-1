@@ -7,7 +7,6 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 body {
@@ -1037,5 +1036,128 @@ p {
         }
       }
     }
+  }
+}
+
+.members-more {
+  &__header {
+    justify-content: flex-start;
+  }
+}
+
+.members-more {
+  padding: 30px 40px;
+  &__phone {
+    margin-top: 16px;
+  }
+}
+
+.members-property {
+  padding: 30px 40px;
+  &__list {
+    margin-top: 16px;
+  }
+
+  &__item {
+    & + & {
+      margin-top: 10px;
+    }
+  }
+}
+.members-property-card {
+  padding: 12px 20px 20px 16px;
+  background: #f8f8f8;
+  border-radius: 12px;
+  position: relative;
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    color: #000000;
+    margin-bottom: 8px;
+  }
+
+  &__list {
+    padding-left: 16px;
+    margin: 0;
+    list-style: disc;
+    padding-bottom: 78px;
+  }
+
+  &__field {
+    & + & {
+      margin-top: 8px;
+    }
+  }
+
+  &__btn-more {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    .button {
+      border: 1px solid #2376f2;
+      color: #2376f2;
+      background: transparent;
+    }
+  }
+}
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  user-select: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  &__dialog {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    background-color: #fff;
+    border-radius: 12px;
+  }
+  &--show {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+    user-select: all;
+  }
+}
+.dialog {
+  padding: 18px 20px;
+  width: 100%;
+  max-width: 562px;
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+  }
+  &__close {
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    background: #f8f8f8;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.property-more {
+  &__field {
+    & + & {
+      margin-top: 10px;
+    }
+  }
+  .garage-field {
+    max-width: none;
   }
 }

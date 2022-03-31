@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/admin-style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="left">
+    <div class="left__logo"><img src="../../images/admin/logo.png" width="175px" height="48px" alt=""></div>
+    <div class="left__menu">
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="./index.html" class="item-menu">
+              <div class="item-menu__icon">
+                <svg class="i-icon" id="ic_news">
+                  <use xlink:href="../../icons/admin-sprite.svg#ic_news"></use>
+                </svg>
+              </div>
+              <div class="text item-menu__text">Новости и опросы</div>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./messages.html" class="item-menu">
+              <div class="item-menu__icon">
+                <svg class="i-icon" id="ic_message">
+                  <use xlink:href="../../icons/admin-sprite.svg#ic_message"></use>
+                </svg>
+              </div>
+              <div class="text item-menu__text">Сообщения</div>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./accounting.html" class="item-menu">
+              <div class="item-menu__icon">
+                <svg class="i-icon" id="ic_payment">
+                  <use xlink:href="../../icons/admin-sprite.svg#ic_payment"></use>
+                </svg>
+              </div>
+              <div class="text item-menu__text">Бухгалтерия</div>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./data.html" class="item-menu">
+              <div class="item-menu__icon">
+                <svg class="i-icon" id="ic_receipt">
+                  <use xlink:href="../../icons/admin-sprite.svg#ic_receipt"></use>
+                </svg>
+              </div>
+              <div class="text item-menu__text">Показания счетчиков</div>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./cameras.html" class="item-menu">
+              <div class="item-menu__icon">
+                <svg class="i-icon" id="ic_camera">
+                  <use xlink:href="../../icons/admin-sprite.svg#ic_camera"></use>
+                </svg>
+              </div>
+              <div class="text item-menu__text">Онлайн камеры</div>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./members.html" class="item-menu item-menu--active">
+              <div class="item-menu__icon">
+                <svg class="i-icon" id="ic_members">
+                  <use xlink:href="../../icons/admin-sprite.svg#ic_members"></use>
+                </svg>
+              </div>
+              <div class="text item-menu__text">Члены кооператива</div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="right">
+    <header class="header members-more__header">
+      <a onclick="javascript:history.back();" class="section__back-button">
+        <svg class="i-icon i-icon--md" id="ic_arrowback">
+          <use xlink:href="../../icons/sprite.svg#ic_arrowback"></use>
+        </svg>
+      </a>
+      <h1 class="title header__title">Спиридонов Олег Викторович</h1>
+    </header>
+    <section class="members-more">
+      <h2 class="block__title">Контакты</h2>
+      <div class="members-more__phone">
+        <div class="garage-field">
+          <input type="text" class="garage-field__input" value="+7 (000) 000-00-00" name="garage-input-1" id="garage-input-1" placeholder=" ">
+          <label for="garage-input-1" class="garage-field__label">Номер телефона</label>
+        </div>
+      </div>
+    </section>
+    <section class="members-property">
+      <h2 class="block__title">В собственности</h2>
+      <div class="members-property__list">
+        <div class="members-property__item">
+          <div class="members-property-card">
+            <h3 class="members-property-card__title">Гараж №5</h3>
+            <ul class="members-property-card__list">
+              <li class="members-property-card__field">Спиридонов Олег Викторович</li>
+              <li class="members-property-card__field">Площадь: <span>16 кв. м.</span></li>
+              <li class="members-property-card__field">70-70-06/011/2020-564</li>
+            </ul>
+            <div class="members-property-card__btn-more">
+              <button href="" class="button button--transparent">
+                <span class="text button__caption">Показать больше</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="members-property__item">
+          <div class="members-property-card">
+            <h3 class="members-property-card__title">Место №24</h3>
+            <ul class="members-property-card__list">
+              <li class="members-property-card__field">Спиридонов Олег Викторович</li>
+              <li class="members-property-card__field">Площадь: <span>24 кв. м.</span></li>
+              <li class="members-property-card__field">70-70-06/011/2020-564</li>
+            </ul>
+            <div class="members-property-card__btn-more">
+              <button href="" class="button button--transparent">
+                <span class="text button__caption">Показать больше</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <div class="modal property-more">
+    <div class="modal__dialog dialog">
+      <div class="dialog__header">
+        <h4 class="dialog__title">Гараж №5</h4>
+        <div class="dialog__close">
+          <svg class="i-icon" id="ic_close">
+            <use xlink:href="../../icons/admin-sprite.svg#ic_close"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="dialog__body">
+        <div class="property-more__list">
+
+          <div class="property-more__field">
+            <div class="garage-field">
+              <input type="text" disabled id="property-more-1" value="Спиридонов Олег Викторович" class="garage-field__input" name="garage-input-1" placeholder=" ">
+              <label for="garage-input-1" class="garage-field__label">ФИО</label>
+            </div>
+          </div>
+          <div class="property-more__field">
+            <div class="garage-field">
+              <input type="text" disabled id="property-more-2" value="5" class="garage-field__input" name="garage-input-1" placeholder=" ">
+              <label for="garage-input-2" class="garage-field__label">Номер гаража/места</label>
+            </div>
+          </div>
+
+          <div class="property-more__field">
+            <div class="garage-field">
+              <input type="text" disabled id="property-more-3" value="16 кв. м. " class="garage-field__input" name="garage-input-1" placeholder=" ">
+              <label for="garage-input-3" class="garage-field__label">Площадь</label>
+            </div>
+          </div>
+          <div class="property-more__field">
+            <div class="garage-field">
+              <input type="text" disabled id="property-more-4" value="70-70-06/011/2020-564" class="garage-field__input" name="garage-input-1" placeholder=" ">
+              <label for="garage-input-4" class="garage-field__label">Кадастровый номер</label>
+            </div>
+          </div>
+          <div class="property-more__field">
+            <div class="garage-field">
+              <input type="text" disabled id="property-more-5" value="15.07.2020" class="garage-field__input" name="garage-input-1" placeholder=" ">
+              <label for="garage-input-5" class="garage-field__label">Дата покупки</label>
+            </div>
+          </div>
+          <div class="property-more__field">
+            <div class="garage-field">
+              <input type="text" disabled id="property-more-6" value="Договор купли-продажи №14" class="garage-field__input" name="garage-input-1" placeholder=" ">
+              <label for="garage-input-6" class="garage-field__label">Документы - основание</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const modal = document.querySelector('.modal.property-more')
+      const trigger = document.querySelectorAll('.members-property-card__btn-more')
+        .forEach(item => item.addEventListener('click', (e) => {
+          if (e.target.closest('.members-property-card__btn-more')) {
+            modal.classList.add('modal--show')
+            activeModal();
+          }
+        }))
+
+      const activeModal = () => {
+        const trigger = (e) => {
+          if (e.target.classList.contains('property-more') || e.target.closest('.dialog__close')) {
+            modal.classList.remove('modal--show')
+            modal.removeEventListener('click', trigger)
+          }
+        }
+        modal.addEventListener('click', trigger)
+      }
+    })
+  </script>
+</body>
+
+</html>
