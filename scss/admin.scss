@@ -163,6 +163,7 @@ p {
   &.header__message{
     justify-content: flex-start;
   }
+<<<<<<< HEAD
   &__find{
     &-input{
       &__body{
@@ -210,6 +211,8 @@ p {
       }
     }
   }
+=======
+>>>>>>> c19042fb67e94115a7ee833226a609c98970626c
 }
 .button {
   display: flex;
@@ -351,6 +354,10 @@ p {
     font-size: 20px;
   }
   &__button{
+<<<<<<< HEAD
+=======
+    padding: 18px;
+>>>>>>> c19042fb67e94115a7ee833226a609c98970626c
     background-color: $grey-1;
     border-radius: 12px;
     margin-right: 20px;
@@ -418,7 +425,10 @@ p {
       padding: 10px 40px 16px;
       background-color: $grey-1;
       margin-bottom: 8px;
+<<<<<<< HEAD
       margin-left: 0;
+=======
+>>>>>>> c19042fb67e94115a7ee833226a609c98970626c
       &__content{
         display: flex;
         justify-content: space-between;
@@ -453,7 +463,11 @@ p {
   &__wrap{
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     width: calc(100% - 390px);
+=======
+    width: calc(100% - 350px);
+>>>>>>> c19042fb67e94115a7ee833226a609c98970626c
     margin-right: 40px;
     .message_content{
       max-width: 380px;
@@ -479,6 +493,7 @@ p {
   }
   &__chat{
     width: 350px;
+<<<<<<< HEAD
     height: 100vh;
     position: fixed;
     top: 0;
@@ -1021,5 +1036,7 @@ p {
         }
       }
     }
+=======
+>>>>>>> c19042fb67e94115a7ee833226a609c98970626c
   }
 }
