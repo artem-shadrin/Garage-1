@@ -137,47 +137,54 @@
     </section>
     <div id="player" class="modal_player">
       <div class="wrap">
-        <h2 class="title modal_player--title">Центральный Паркинг №1</h2>
-        <svg id="player__close" class="i-icon close">
-          <use xlink:href="../../icons/sprite.svg#ic_close"></use>
-        </svg>
-      </div>
-      <div class="wrap-video">
-        <img src="../../images/camera/4.jpg" alt="">
-        <svg class="i-icon">
-          <use xlink:href="../../icons/sprite.svg#ic_pause"></use>
-        </svg>
-        <span class="date">05.03. 2022 03:34:35</span>
+        <div class="content">
+          <h2 class="title modal_player--title">Центральный Паркинг №1</h2>
+          <div class="modal_close">
+            <svg id="player__close" class="i-icon close">
+              <use xlink:href="../../icons/sprite.svg#ic_close"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="wrap-video">
+          <img src="../../images/admin/unsplash.png" alt="">
+          <svg class="i-icon">
+            <use xlink:href="../../icons/sprite.svg#ic_pause"></use>
+          </svg>
+          <span class="date">05.03. 2022 03:34:35</span>
+        </div>
       </div>
     </div>
     
     <div id="create" class="modal_create">
       <div class="wrap">
-        <h2 class="title modal_create--title">Редактировать</h2>
-        <svg id="player__close" class="i-icon close">
-          <use xlink:href="../../icons/sprite.svg#ic_close"></use>
-        </svg>
-      </div>
-      <div class="wrap-create">
-        <span class="text">Название камеры</span>
-        <div class="chat-input__text">
-          <input type="text" name="profile__email" id="profile__email" placeholder="КП №7">
-        </div>
-        <div class="wrap-buttons">
-          <div class="create-ad-btn">
-            <a href="#" class="button button--active">
-              <span class="text-button button__caption">Сохранить изменения</span>
-            </a>
+        <div class="content">
+          <h2 class="title modal_create--title">Редактировать</h2>
+          <div class="modal_close">
+            <svg id="player__close" class="i-icon close">
+              <use xlink:href="../../icons/sprite.svg#ic_close"></use>
+            </svg>
           </div>
-          <div class="create-ad-btn">
-            <a href="#" class="button button--transparent">
-              <span id="player__close" class="text-button button__caption">Отменить</span>
-            </a>
+        </div>
+        <div class="wrap-create">
+          <span class="text">Название камеры</span>
+          <div class="chat-input__text">
+            <input type="text" name="profile__email" id="profile__email" placeholder="КП №7">
+          </div>
+          <div class="wrap-buttons">
+            <div class="create-ad-btn">
+              <a href="#" class="button button--active">
+                <span class="text-button button__caption">Сохранить изменения</span>
+              </a>
+            </div>
+            <div class="create-ad-btn">
+              <a href="#" class="button button--transparent">
+                <span id="player__close" class="text-button button__caption">Отменить</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div id="myOverlay"></div>
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="../../js/components/admin.js"></script>

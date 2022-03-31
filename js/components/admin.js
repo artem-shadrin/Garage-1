@@ -39,29 +39,46 @@ $(document).ready(function() {
     $('.create__survey').removeClass('create_active');
     $('.header').removeClass('header_active');
   });
-  
-  $('a.camera-card__video').click( function(event){
-    event.preventDefault();
-    $('#myOverlay').fadeIn(297,	function(){
-      $('#player') 
-      .css('display', 'block')
-      .animate({opacity: 1}, 198);
-    });
-  });
-
-  $('#player__close, #myOverlay').click( function(){
-    $('#player, #create').animate({opacity: 0}, 198, function(){
-      $(this).css('display', 'none');
-      $('#myOverlay').fadeOut(297);
-    });
-  });
-
-  $('a.camera-card__title').click( function(event){
-    event.preventDefault();
-    $('#myOverlay').fadeIn(297,	function(){
-      $('#create') 
-      .css('display', 'block')
-      .animate({opacity: 1}, 198);
-    });
-  });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.querySelector('.modal_player')
+  const trigger = document.querySelectorAll('.camera-card__video')
+    .forEach(item => item.addEventListener('click', (e) => {
+      if (e.target.closest('.camera-card__video')) {
+        modal.classList.add('modal--show')
+        activeModal();
+      }
+    }))
+
+  const activeModal = () => {
+    const trigger = (e) => {
+      if (e.target.classList.contains('modal_player') || e.target.closest('.close')) {
+        modal.classList.remove('modal--show')
+        modal.removeEventListener('click', trigger)
+      }
+    }
+    modal.addEventListener('click', trigger)
+  }
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.querySelector('.modal_create')
+  const trigger = document.querySelectorAll('.camera-card__title')
+    .forEach(item => item.addEventListener('click', (e) => {
+      if (e.target.closest('.camera-card__title')) {
+        modal.classList.add('modal--show')
+        activeModal();
+      }
+    }))
+
+  const activeModal = () => {
+    const trigger = (e) => {
+      if (e.target.classList.contains('modal_create') || e.target.closest('.close, .create-ad-btn')) {
+        modal.classList.remove('modal--show')
+        modal.removeEventListener('click', trigger)
+      }
+    }
+    modal.addEventListener('click', trigger)
+  }
+})
