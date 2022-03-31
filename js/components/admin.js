@@ -39,7 +39,6 @@ $(document).ready(function() {
     $('.create__survey').removeClass('create_active');
     $('.header').removeClass('header_active');
   });
-<<<<<<< HEAD
   
   $('a.camera-card__video').click( function(event){
     event.preventDefault();
@@ -66,6 +65,3 @@ $(document).ready(function() {
     });
   });
 });
-=======
-});
->>>>>>> c19042fb67e94115a7ee833226a609c98970626c

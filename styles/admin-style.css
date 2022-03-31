@@ -534,7 +534,7 @@ p {
 .button--create {
   border: 1px solid #2376f2;
   border-radius: 16px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .button--create.active {
@@ -587,11 +587,11 @@ p {
   background-color: #f8f8f8;
   margin-bottom: 20px;
   padding: 24px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .news__info:hover {
-  box-shadow: 0 4px 24px 0 #364B6A12;
+  box-shadow: 0 4px 24px 0 #364b6a12;
 }
 
 .news__info:last-child {
@@ -607,7 +607,7 @@ p {
 }
 
 .news .button {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .news .button__caption {
@@ -620,7 +620,7 @@ p {
 
 .news .button:hover .button__caption {
   color: #91baf9;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .garage-votecard {
@@ -631,7 +631,9 @@ p {
   max-width: 311px;
 }
 
-.create, .create__add, .create__survey {
+.create,
+.create__add,
+.create__survey {
   max-width: 350px;
   width: 100%;
   height: 100vh;
@@ -644,63 +646,89 @@ p {
   transform: translateX(100%);
   top: 0;
   padding: 20px 46px 20px 26px;
-  border-left: 1px solid #EFEFEF;
+  border-left: 1px solid #efefef;
 }
 
-.create__link, .create__add__link, .create__survey__link {
+.create__link,
+.create__add__link,
+.create__survey__link {
   display: flex;
   align-items: center;
 }
 
-.create__title, .create__add__title, .create__survey__title {
+.create__title,
+.create__add__title,
+.create__survey__title {
   font-size: 20px;
 }
 
-.create__button, .create__add__button, .create__survey__button {
+.create__button,
+.create__add__button,
+.create__survey__button {
   background-color: #f8f8f8;
   border-radius: 12px;
   margin-right: 20px;
 }
 
-.create_active, .create__add_active, .create__survey_active {
+.create_active,
+.create__add_active,
+.create__survey_active {
   transform: translateX(0%);
   right: 0;
 }
 
-.create-data__info, .create__add-data__info, .create__survey-data__info {
+.create-data__info,
+.create__add-data__info,
+.create__survey-data__info {
   margin-top: 30px;
 }
 
-.create-data__field .garage-field, .create__add-data__field .garage-field, .create__survey-data__field .garage-field {
+.create-data__field .garage-field,
+.create__add-data__field .garage-field,
+.create__survey-data__field .garage-field {
   margin-bottom: 20px;
 }
 
-.create-data__field .garage-field:last-child, .create__add-data__field .garage-field:last-child, .create__survey-data__field .garage-field:last-child {
+.create-data__field .garage-field:last-child,
+.create__add-data__field .garage-field:last-child,
+.create__survey-data__field .garage-field:last-child {
   margin-bottom: 20px;
 }
 
-.create-data__field .garage-field:nth-child(2), .create__add-data__field .garage-field:nth-child(2), .create__survey-data__field .garage-field:nth-child(2) {
+.create-data__field .garage-field:nth-child(2),
+.create__add-data__field .garage-field:nth-child(2),
+.create__survey-data__field .garage-field:nth-child(2) {
   min-height: 196px;
 }
 
-.create-data__field .garage-field .garage-field__label, .create__add-data__field .garage-field .garage-field__label, .create__survey-data__field .garage-field .garage-field__label {
+.create-data__field .garage-field .garage-field__label,
+.create__add-data__field .garage-field .garage-field__label,
+.create__survey-data__field .garage-field .garage-field__label {
   top: 0;
   left: 0;
 }
 
-.create-data__field .garage-field .garage-field__input, .create__add-data__field .garage-field .garage-field__input, .create__survey-data__field .garage-field .garage-field__input {
+.create-data__field .garage-field .garage-field__input,
+.create__add-data__field .garage-field .garage-field__input,
+.create__survey-data__field .garage-field .garage-field__input {
   resize: none;
 }
 
-.create-ad-btn, .create__add-ad-btn, .create__survey-ad-btn {
+.create-ad-btn,
+.create__add-ad-btn,
+.create__survey-ad-btn {
   margin-bottom: 10px;
 }
 
-.create-ad-btn .button, .create__add-ad-btn .button, .create__survey-ad-btn .button {
+.create-ad-btn .button,
+.create__add-ad-btn .button,
+.create__survey-ad-btn .button {
   justify-content: center;
 }
 
-.create-ad-btn:nth-child(4), .create__add-ad-btn:nth-child(4), .create__survey-ad-btn:nth-child(4) {
+.create-ad-btn:nth-child(4),
+.create__add-ad-btn:nth-child(4),
+.create__survey-ad-btn:nth-child(4) {
   margin-bottom: 20px;
 }
 
@@ -781,7 +809,7 @@ p {
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
   padding: 20px 30px 48px 20px;
-  background-color: #4E6EE0;
+  background-color: #4e6ee0;
   margin-bottom: 20px;
 }
 
@@ -807,7 +835,7 @@ p {
   top: 0;
   right: 0;
   background: #fff;
-  border-left: 1px solid #EFEFEF;
+  border-left: 1px solid #efefef;
 }
 
 .message__chat .chat_main {
@@ -1069,7 +1097,7 @@ p {
 }
 
 .data__list--item::before {
-  content: '';
+  content: "";
   margin-right: 10px;
   width: 6px;
   height: 6px;
@@ -1284,7 +1312,7 @@ p {
 
 .modal_create .wrap-create .chat-input__text {
   display: block;
-  border: 1px solid #EDEDED;
+  border: 1px solid #ededed;
   border-radius: 12px;
 }
 
@@ -1371,7 +1399,7 @@ p {
 }
 
 .members__list--item .list .item::before {
-  content: '';
+  content: "";
   margin-right: 10px;
   width: 6px;
   height: 6px;
