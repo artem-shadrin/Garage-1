@@ -34,15 +34,16 @@
     <path d="M17.4 13.5H15" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
     <path d="M12.0948 16.5C11.9198 16.061 11.6498 15.667 11.3028 15.346V15.346C10.7158 14.802 9.94579 14.5 9.14579 14.5H7.85379C7.05379 14.5 6.28379 14.802 5.69679 15.346V15.346C5.34979 15.667 5.07979 16.061 4.90479 16.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ic_receipt">
-    <path d="M13 5H8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-    <path d="M8 9H13" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-    <path d="M8 13H13" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M1 2.778V17.5C1 18.243 1.782 18.727 2.447 18.394L3.218 18.008C3.5 17.867 3.831 17.867 4.112 18.008L5.885 18.894C6.166 19.035 6.498 19.035 6.779 18.894L8.552 18.008C8.833 17.867 9.165 17.867 9.446 18.008L11.219 18.894C11.501 19.035 11.832 19.035 12.114 18.894L13.885 18.008C14.167 17.867 14.498 17.867 14.78 18.008L15.552 18.394C16.218 18.727 17 18.243 17 17.5V2.778C17 1.796 16.204 1 15.222 1H2.778C1.796 1 1 1.796 1 2.778Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-    <path d="M4.87401 4.875C4.80601 4.875 4.74901 4.931 4.75001 5C4.75001 5.069 4.80601 5.125 4.87501 5.125C4.94401 5.125 5.00001 5.069 5.00001 5C5.00001 4.931 4.94401 4.875 4.87401 4.875" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-    <path d="M4.87401 8.875C4.80501 8.875 4.74901 8.931 4.75001 9C4.75001 9.069 4.80601 9.125 4.87501 9.125C4.94401 9.125 5.00001 9.069 5.00001 9C5.00001 8.931 4.94401 8.875 4.87401 8.875" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-    <path d="M4.87401 12.875C4.80501 12.875 4.74901 12.931 4.75001 13C4.75001 13.069 4.80601 13.125 4.87501 13.125C4.94401 13.125 5.00001 13.069 5.00001 13C5.00001 12.931 4.94401 12.875 4.87401 12.875" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+  <symbol viewBox="0 0 18 20" xmlns="http://www.w3.org/2000/svg" id="ic_receipt">
+    <path d="M13 5H8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M8 9H13" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M8 13H13" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M1 2.778V17.5C1 18.243 1.782 18.727 2.447 18.394L3.218 18.008C3.5 17.867 3.831 17.867 4.112 18.008L5.885 18.894C6.166 19.035 6.498 19.035 6.779 18.894L8.552 18.008C8.833 17.867 9.165 17.867 9.446 18.008L11.219 18.894C11.501 19.035 11.832 19.035 12.114 18.894L13.885 18.008C14.167 17.867 14.498 17.867 14.78 18.008L15.552 18.394C16.218 18.727 17 18.243 17 17.5V2.778C17 1.796 16.204 1 15.222 1H2.778C1.796 1 1 1.796 1 2.778Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M4.87401 4.875C4.80601 4.875 4.74901 4.931 4.75001 5C4.75001 5.069 4.80601 5.125 4.87501 5.125C4.94401 5.125 5.00001 5.069 5.00001 5C5.00001 4.931 4.94401 4.875 4.87401 4.875" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M4.87401 8.875C4.80501 8.875 4.74901 8.931 4.75001 9C4.75001 9.069 4.80601 9.125 4.87501 9.125C4.94401 9.125 5.00001 9.069 5.00001 9C5.00001 8.931 4.94401 8.875 4.87401 8.875" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M4.87401 12.875C4.80501 12.875 4.74901 12.931 4.75001 13C4.75001 13.069 4.80601 13.125 4.87501 13.125C4.94401 13.125 5.00001 13.069 5.00001 13C5.00001 12.931 4.94401 12.875 4.87401 12.875" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
   </symbol>
+
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="message">
     <path d="M7.07783 21.808C9.78583 21.808 11.9818 19.612 11.9818 16.904C11.9818 14.196 9.78683 12 7.07783 12C4.36883 12 2.17383 14.196 2.17383 16.904" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
     <path d="M7.083 21.813C6.345 21.813 5.646 21.65 5.018 21.359L2 22L2.631 18.976C2.338 18.346 2.174 17.644 2.174 16.904" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>

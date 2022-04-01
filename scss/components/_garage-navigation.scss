@@ -12,6 +12,15 @@
         &--active {
             color: $active-blue;
         }
+        &:nth-child(2){
+            .garage-link{
+                &__icon{
+                    .i-icon{
+                        width: 20px;
+                    }
+                }
+            }
+        }
     }
 }
 .garage-link {

@@ -506,12 +506,14 @@ p {
         .message__name {
           font-size: 16px;
           white-space: nowrap;
+          overflow: hidden;
           margin-bottom: 4px;
           text-overflow: ellipsis;
           color: #000;
         }
         .message__text {
           white-space: nowrap;
+          overflow: hidden;
           text-overflow: ellipsis;
           display: block;
           color: $active-blue;
@@ -1167,5 +1169,430 @@ p {
   }
   .garage-field {
     max-width: none;
+  }
+}
+
+@media (max-width: 768px) {
+  p, span{
+    font-size: 14px;
+  }
+  ul li{
+    font-size: 14px;
+  }
+  .text{
+    font-size: 12px;
+  }
+  .title {
+    font-size: 16px !important;
+  }
+  .button{
+    padding: 8px 12px;
+  }
+  .left{
+    padding-top: 30px;
+    width: 250px;
+    &__logo{
+      margin-bottom: 25px;
+    }
+    &__menu{
+      .item-menu{
+        padding-left: 15px;
+      }
+    }
+  }
+  .right{
+    width: calc(100% - 250px);
+    .header{
+      padding: 10px 20px;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .title {
+        margin-bottom: 15px;
+      }
+      &__tools{
+        flex-wrap: wrap;
+      }
+      &__message{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        .title{
+          margin-bottom: 0;
+        }
+      }
+      &__find-input__body{
+        .wrap{
+          max-width: 380px;
+          width: 100%;
+        }
+      } 
+      &.members-more__header{
+        flex-direction: inherit;
+        align-items: center;
+        flex-wrap: wrap;
+        .title{
+          margin-bottom: 0;
+        }
+      }
+    }
+    .news{
+      margin: 10px 20px;
+      &__info{
+        padding: 12px;
+      }
+      .button{
+        padding: 8px 12px;
+      }
+    }
+    .garage-votecard{
+      &__title{
+        font-size: 16px;
+      }
+    }
+    .garage-field__label{
+      font-size: 14px;
+    }
+  }
+  .create, .create__add, .create__survey{
+    max-width: 250px;
+    right: -250px;
+    padding: 10px 23px 10px 13px;
+  }
+  .create_active, .create__add_active, .create__survey_active{
+    right: 0;
+    transform: translate(0%);
+  }
+  .messages{
+    &__title{
+      margin: 10px 20px;
+    }
+    &__wrap{
+      .message{
+        margin: 0;
+        margin-bottom: 8px;
+        padding: 10px 20px 10px;
+      }
+    }
+  }
+  .message{
+    margin: 10px 20px;
+    &__wrap{
+      width: 100%;
+    }
+    &__chat{
+      display: none;
+    }
+  }
+  .chat{
+    &__footer{
+      margin-left: 250px;
+      margin-right: 0;
+    }
+  }
+  .data{
+    margin: 10px 20px;
+  }
+  .cameras{
+    margin: 10px 20px;
+    &__list{
+      justify-content: space-between; 
+    }
+    &__item{
+      width: auto;
+      max-width: 47%;
+      flex-wrap: nowrap;
+      margin-right: 10px;
+      .camera-card{
+        &__title{
+          font-size: 16px;
+          height: 45px;
+        }
+        &__video{
+          .i-icon{
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+  .members{
+    margin: 10px 20px;
+    &__list--item{
+      .wrap-buttons{
+        flex-wrap: wrap;
+        gap: 10px;
+        .create-ad-btn{
+          max-width: 140px;
+          margin: 0;
+        }
+      }
+    }
+  }
+  .modal_player {
+    .wrap{
+      padding: 10px 20px;
+      max-width: 80%;
+      height: auto;
+      &-video{
+        .date{
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 560px){
+  p, span, ul li, span, input{
+    font-size: 12px;
+  }
+  .item-menu__icon{
+    margin-right: 5px;
+  }
+  .i-icon{
+    width: 14px;
+    height: 14px;
+  }
+  .text{
+    line-height: 12px;
+    font-size: 10px;
+  }
+  .title{
+    font-size: 14px !important;
+    line-height: 18px !important;
+  }
+  .left{
+    padding-top: 8px;
+    width: 135px;
+    &__logo{
+      padding-left: 8px;
+      margin-bottom: 8px;
+      img{
+        width: 100%;
+        max-width: 110px;
+        height: auto;
+      }
+    }
+    &__menu{
+      .item-menu{
+        padding-left: 10px;
+      }
+    }
+  }
+  .right{
+    width: calc(100% - 135px);
+    .header{
+      padding: 5px 10px;
+      .title{
+        margin-bottom: 10px;
+      }
+      &__tools{
+        gap: 10px;
+      }
+      &__message{
+        .title{
+          margin: 0;
+        }
+      }
+      &__find{
+        &-input__body{
+          flex-wrap: wrap;
+          justify-content: flex-end;
+          gap: 10px;
+          .wrap{
+            padding: 6px 7.5px;
+            margin: 0;
+          }
+        } 
+        &-input__icon-file{
+          .i-icon{
+            width: 24px;
+            height: 24px;
+          }
+        } 
+      }
+    }
+    .news{
+      margin: 5px 10px;
+      &__title{
+        margin-bottom: 10px;
+      }
+    }
+    .garage-field{
+      &__label{
+        font-size: 12px;
+      }
+    }
+    .garage-votecard{
+      &__title{
+        font-size: 14px;
+      }
+    }
+    .garage-variant{
+      &__pecent{
+        font-size: 12px;
+      }
+      &__text{
+        font-size: 12px;
+      }
+    }
+  }
+  .section__back-button{
+    display: block;
+    width: 24px;
+    height: 24px;
+    .i-icon{
+      transform: translate(35%, 30%);
+    }
+  }
+  .messages{
+    .title{
+      margin: 5px 10px 10px;
+    }
+    &__wrap{
+      .message{
+        padding: 5px 10px 5px;
+        .title{
+          margin: 0;
+        }
+        &__time{
+          font-size: 12px;
+        }
+        &__text{
+          font-size: 10px;
+        }
+        &__content{
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  .message{
+    margin: 5px 10px;
+    &__wrap{
+      .message_content{
+        margin-bottom: 10px;
+        padding: 10px 15px 24px 10px;
+      }
+    }
+  }
+  .cameras{
+    margin: 5px 10px;
+    &__item{
+      max-width: 100%;
+      margin-bottom: 10px;
+      .camera-card{
+        &__title{
+          height: auto;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+  .members{
+    &__list{
+      &--item{
+        padding: 6px 10px 10px 8px;
+        .list{
+          .item{
+            margin-bottom: 8px;
+          }
+        }
+      }
+  }
+  }
+  .members-more{
+    padding: 5px 10px;
+    .block__title{
+      font-size: 14px;
+    }
+  }
+  .members-property{
+    padding: 5px 10px;
+    .block__title{
+      font-size: 14px;
+    }
+    &-card{
+      padding: 6px 10px 10px 8px;
+      &__title{
+        font-size: 14px;
+      }
+      &__list{
+        padding-bottom: 58px;
+      }
+      &__btn-more{
+        right: 10px;
+        bottom: 10px;
+      }
+    }
+  }
+  .members .header__find .header__create-vote-btn{
+    max-width: 30%;
+  }
+  .modal_create {
+    .wrap{
+      width: 95%;
+      .modal_close{
+        width: 36px;
+        height: 36px;
+      }
+      .close{
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+  .modal_player{
+    .wrap{
+      width: 95%;
+      .modal_close{
+        width: 36px;
+        height: 36px;
+      }
+      .close{
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+  .garage-field__input{
+    font-size: 14px;
+  }
+  .chat{
+    &__footer{
+      margin-left: 135px;
+      padding-bottom: 10px;
+      .chat-input{
+        padding-right: 10px;
+        &__body{
+          align-items: center;
+        }
+        &__send-btn{
+          padding-left: 10px;
+          .i-icon{
+            width: 24px;
+            height: 24px;
+          }
+        }
+        &__file{
+          &-title{
+            font-size: 12px;
+            height: 20px;
+            .i-icon{
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+        &__text{
+          padding-left: 5px;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+  .dialog{
+    width: 95%;
   }
 }

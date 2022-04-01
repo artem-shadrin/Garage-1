@@ -1,5 +1,5 @@
 .profile {
-  padding-top: 72px;
+  padding-top: 28px;
   &__title {
     margin-bottom: 24px;
   }
@@ -99,7 +99,7 @@
 }
 
 .profile-data {
-  padding-top: 56px;
+  padding-top: 12px;
   &__title {
     font-family: "SF Pro Display";
     font-style: normal;
@@ -127,7 +127,7 @@
 }
 
 .contacts {
-  padding-top: 56px;
+  padding-top: 12px;
   &__title {
     margin-top: 16px;
     margin-bottom: 16px;
@@ -182,7 +182,7 @@
 }
 
 .history {
-  padding-top: 56px;
+  padding-top: 12px;
   &__item {
     & + & {
       margin-top: 24px;
@@ -312,7 +312,7 @@
 .messages-list {
 }
 .messages-item {
-  transform: translate(20px);
+  transform: translate(10px);
   & + & {
     margin-top: 16px;
   }
@@ -374,7 +374,7 @@
   &--friend {
     background: #f8f8f8;
     border-radius: 0px 12px 12px 12px;
-    transform: translate(-20px);
+    transform: translate(-10px);
     .messages-item__friend {
       display: block;
     }
@@ -393,7 +393,7 @@
   &__files {
     display: inline-flex;
     flex-direction: column;
-    transform: translate(-20px);
+    transform: translate(-10px);
   }
 
   &__file {
@@ -454,8 +454,8 @@
       display: flex;
       align-items: center;
       border-radius: 24px;
-      width: 100%;
-      transform: translate(-20px);
+      width: 97%;
+      transform: translate(-10px);
     }
   }
 
@@ -492,7 +492,7 @@
     background: none;
     position: absolute;
     right: 0;
-    transform: translate(20px);
+    transform: translate(10px);
   }
 }
 .chat-delete {
