@@ -8,7 +8,13 @@
   <link rel="stylesheet" href="../../styles/admin-style.css">
   <title>Document</title>
 </head>
-
+<div class="menu__burger">
+  <div class="burger" onclick="burgerMenu(this)">
+    <div class="b1"></div>
+    <div class="b2"></div>
+    <div class="b3"></div>
+  </div>
+</div>
 <div class="left">
   <div class="left__logo"><img src="../../images/admin/logo.png" width="175px" height="48px" alt=""></div>
   <div class="left__menu">
@@ -121,7 +127,7 @@
           <li class="data__list--item">Электроэнергия: 10 кВт</li>
           <li class="data__list--item">Дата снятия показаний: 08.03.2022</li>
         </ul>
-      </div>	
+      </div>
     </div>
     <div class="data__wrap">
       <div class="data__wrap--content">
@@ -133,7 +139,7 @@
           <li class="data__list--item">Электроэнергия: 12 кВт</li>
           <li class="data__list--item">Дата снятия показаний: 08.03.2022</li>
         </ul>
-      </div>	
+      </div>
     </div>
     <div class="data__wrap">
       <div class="data__wrap--content">
@@ -145,7 +151,7 @@
           <li class="data__list--item">Электроэнергия: 7 кВт</li>
           <li class="data__list--item">Дата снятия показаний: 08.03.2022</li>
         </ul>
-      </div>	
+      </div>
     </div>
     <div class="data__wrap">
       <div class="data__wrap--content">
@@ -157,7 +163,7 @@
           <li class="data__list--item">Электроэнергия: 7 кВт</li>
           <li class="data__list--item">Дата снятия показаний: 08.03.2022</li>
         </ul>
-      </div>	
+      </div>
     </div>
     <div class="data__wrap">
       <div class="data__wrap--content">
@@ -169,13 +175,18 @@
           <li class="data__list--item">Электроэнергия: 7 кВт</li>
           <li class="data__list--item">Дата снятия показаний: 08.03.2022</li>
         </ul>
-      </div>	
+      </div>
     </div>
   </section>
 </div>
 
 <body>
-
+<script>
+  function burgerMenu(icon) {
+    icon.parentNode.classList.toggle("menu__burger--active");
+    icon.classList.toggle("change");
+  }
+</script>
 </body>
 
 </html>
