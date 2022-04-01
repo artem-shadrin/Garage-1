@@ -1408,7 +1408,6 @@ p {
   position: absolute;
   right: 10px;
   top: 7px;
-  display: none;
 }
 
 .burger {
@@ -1620,11 +1619,16 @@ input {
   }
 
   .left {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    transition: 0.2s;
   }
 
   .menu__burger--active + .left {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    z-index: 20;
     width: 100%;
   }
 
